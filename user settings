@@ -105,7 +105,50 @@
           }
         }
       ]
-    }
-  },
-  "workbench.colorTheme": "Night Owl"
+    },
+    "[Night Owl (No Italics)]": {
+      "textMateRules": [
+        {
+          "scope": "entity.name.tag.tsx",
+          "settings": {
+            "foreground": "#569CD6",
+          }
+        },
+        {
+          "scope": "support.class.component.tsx",
+          "settings": {
+            "foreground": "#4EC9B0",
+          }
+        },
+        {
+          "scope": "punctuation.definition.tag.begin.tsx",
+          "settings": {
+            "foreground": "#808080",
+          }
+        },
+        {
+          "scope": "punctuation.definition.tag.end.tsx",
+          "settings": {
+            "foreground": "#808080",
+          }
+        }
+      ]
+    },
+    "[Default Dark Modern]": {
+      "textMateRules": [
+        {
+          "scope": ["storage.modifier", "keyword", "storage.type"],
+          "settings": {
+            "fontStyle": "italic",
+          }
+        },
+        {
+          "scope": ["constant.language.null"],
+          "settings": {
+            "foreground": "#990000"
+          }
+        },
+      ]
+    },
+  }
 }
