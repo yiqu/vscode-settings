@@ -74,7 +74,10 @@
   "cSpell.userWords": [
     "Consolas",
     "couldn",
+    "gameindices",
+    "locationarea",
     "Pokedex",
+    "pokedexes",
     "pokemons"
   ],
   "editor.tokenColorCustomizations": {
@@ -150,5 +153,5 @@
         },
       ]
     },
-  }
+  },
 }
