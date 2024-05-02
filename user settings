@@ -28,11 +28,12 @@
   },
   "html.autoCreateQuotes": false,
   "editor.tabSize": 2,
+  "editor.fontSize": 14,
+  "editor.letterSpacing": 0.3,
   "javascript.preferences.quoteStyle": "double",
   "workbench.startupEditor": "none",
   "github.copilot.advanced": {},
   "editor.inlineSuggest.enabled": true,
-  "mui-snippets.importPaths": "second level",
   "github.copilot.enable": {
     "*": true,
     "plaintext": false,
@@ -50,7 +51,6 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "always"
   },
-  "remote.SSH.useLocalServer": false,
   "workbench.tree.enableStickyScroll": false,
   "colorize.languages": [
     "css",
@@ -68,17 +68,23 @@
     "typescriptreact"
   ],
   "update.mode": "manual",
-  "editor.fontFamily": "Dank Mono, Consolas, 'Courier New', monospace",
+  "editor.fontFamily": "JetBrains Mono, Dank Mono, Consolas, 'Courier New', monospace",
   "editor.lineHeight": 0,
   "editor.fontLigatures": true,
   "cSpell.userWords": [
+    "ANALYZEOPEN",
     "Consolas",
     "couldn",
+    "esbenp",
     "gameindices",
     "locationarea",
+    "metafile",
+    "nextjs",
     "Pokedex",
     "pokedexes",
-    "pokemons"
+    "pokemons",
+    "scminput",
+    "toploader"
   ],
   "editor.tokenColorCustomizations": {
     "[Night Owl]": {
