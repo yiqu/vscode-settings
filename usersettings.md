@@ -71,10 +71,11 @@
   ],
   "update.mode": "manual",
   "editor.fontFamily": "Victor Mono Medium, JetBrains Mono Light, MonoLisa, Dank Mono, Consolas, 'Courier New', monospace",
-  "editor.lineHeight": 0,
+  "editor.lineHeight": 1.4,
   "editor.fontLigatures": true,
   "cSpell.userWords": [
     "ANALYZEOPEN",
+    "Boba",
     "Consolas",
     "couldn",
     "esbenp",
@@ -162,5 +163,12 @@
       ]
     },
   },
+  "inline-parameters.enabled": true,
+  "inline-parameters.fontStyle": "normal",
+  "inline-parameters.fontSize": "0.85em",
+  "inline-parameters.margin": "0.15em",
+  "inline-parameters.borderRadius": "0.55em",
+  "inline-parameters.padding": "0.15em 0.1em"
 }
+
 ```
