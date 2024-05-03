@@ -1,4 +1,3 @@
-```
 {
   "workbench.iconTheme": "material-icon-theme",
   "editor.minimap.enabled": false,
@@ -31,6 +30,7 @@
   "editor.tabSize": 2,
   "editor.fontSize": 14,
   "editor.letterSpacing": 0.3,
+  "editor.fontWeight": "normal",
   "javascript.preferences.quoteStyle": "double",
   "workbench.startupEditor": "none",
   "github.copilot.advanced": {},
@@ -69,7 +69,7 @@
     "typescriptreact"
   ],
   "update.mode": "manual",
-  "editor.fontFamily": "JetBrains Mono, Dank Mono, Consolas, 'Courier New', monospace",
+  "editor.fontFamily": "Victor Mono Medium, JetBrains Mono Light, MonoLisa, Dank Mono, Consolas, 'Courier New', monospace",
   "editor.lineHeight": 0,
   "editor.fontLigatures": true,
   "cSpell.userWords": [
@@ -162,4 +162,3 @@
     },
   },
 }
-```
