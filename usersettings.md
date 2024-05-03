@@ -1,3 +1,4 @@
+```
 {
   "workbench.iconTheme": "material-icon-theme",
   "editor.minimap.enabled": false,
@@ -162,3 +163,4 @@
     },
   },
 }
+```
