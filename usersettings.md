@@ -1,59 +1,5 @@
 ```
 {
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.minimap.enabled": false,
-  "window.newWindowDimensions": "offset",
-  "editor.gotoLocation.multipleReferences": "goto",
-  "editor.gotoLocation.multipleDefinitions": "goto",
-  "editor.gotoLocation.multipleDeclarations": "goto",
-  "editor.gotoLocation.multipleImplementations": "goto",
-  "editor.gotoLocation.multipleTypeDefinitions": "goto",
-  "workbench.colorCustomizations": {
-    "gitDecoration.modifiedResourceForeground": "#e2c08d",
-    "gitDecoration.untrackedResourceForeground": "#73c991",
-    "list.warningForeground": "#f6f1a0"
-  },
-  "search.exclude": {
-    ".firebase": true,
-    "**/*.code-search": true,
-    "**/bower_components": true,
-    "**/metafile.css.json": true,
-    "**/metafile.js.json": true,
-    "**/metafile.server.json": true,
-    "**/node_modules": true,
-    "api/index.js": true,
-    "api/index.js.map": true,
-    "build/": true,
-    "package-lock.json": true,
-    ".next": true
-  },
-  "html.autoCreateQuotes": false,
-  "editor.tabSize": 2,
-  "editor.fontSize": 14,
-  "editor.letterSpacing": 0.3,
-  "editor.fontWeight": "normal",
-  "javascript.preferences.quoteStyle": "double",
-  "workbench.startupEditor": "none",
-  "github.copilot.advanced": {},
-  "editor.inlineSuggest.enabled": true,
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false
-  },
-  "window.zoomLevel": -1,
-  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
-  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
-  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
-  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
-  "editor.stickyScroll.enabled": false,
-  "typescript.updateImportsOnFileMove.enabled": "never",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "always"
-  },
-  "workbench.tree.enableStickyScroll": false,
   "colorize.languages": [
     "css",
     "sass",
@@ -69,10 +15,6 @@
     "javascriptreact",
     "typescriptreact"
   ],
-  "update.mode": "manual",
-  "editor.fontFamily": "Victor Mono Medium, JetBrains Mono Light, MonoLisa, Dank Mono, Consolas, 'Courier New', monospace",
-  "editor.lineHeight": 1.4,
-  "editor.fontLigatures": true,
   "cSpell.userWords": [
     "ANALYZEOPEN",
     "Boba",
@@ -89,31 +31,44 @@
     "scminput",
     "toploader"
   ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "Victor Mono Medium, JetBrains Mono Light, MonoLisa, Dank Mono, Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.fontWeight": "normal",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+  "editor.inlineSuggest.enabled": true,
+  "editor.letterSpacing": 0.7,
+  "editor.lineHeight": 1.5,
+  "editor.minimap.enabled": false,
+  "editor.stickyScroll.enabled": false,
+  "editor.tabSize": 2,
   "editor.tokenColorCustomizations": {
-    "[Night Owl]": {
+    "[Default Dark Modern]": {
       "textMateRules": [
         {
-          "scope": "entity.name.tag.tsx",
+          "scope": [
+            "storage.modifier",
+            "keyword",
+            "storage.type"
+          ],
           "settings": {
-            "foreground": "#569CD6",
+            "fontStyle": "italic"
           }
         },
         {
-          "scope": "support.class.component.tsx",
+          "scope": [
+            "constant.language.null"
+          ],
           "settings": {
-            "foreground": "#4EC9B0",
-          }
-        },
-        {
-          "scope": "punctuation.definition.tag.begin.tsx",
-          "settings": {
-            "foreground": "#808080",
-          }
-        },
-        {
-          "scope": "punctuation.definition.tag.end.tsx",
-          "settings": {
-            "foreground": "#808080",
+            "foreground": "#990000"
           }
         }
       ]
@@ -123,52 +78,103 @@
         {
           "scope": "entity.name.tag.tsx",
           "settings": {
-            "foreground": "#569CD6",
+            "foreground": "#569CD6"
           }
         },
         {
           "scope": "support.class.component.tsx",
           "settings": {
-            "foreground": "#4EC9B0",
+            "foreground": "#4EC9B0"
           }
         },
         {
           "scope": "punctuation.definition.tag.begin.tsx",
           "settings": {
-            "foreground": "#808080",
+            "foreground": "#808080"
           }
         },
         {
           "scope": "punctuation.definition.tag.end.tsx",
           "settings": {
-            "foreground": "#808080",
+            "foreground": "#808080"
           }
         }
       ]
     },
-    "[Default Dark Modern]": {
+    "[Night Owl]": {
       "textMateRules": [
         {
-          "scope": ["storage.modifier", "keyword", "storage.type"],
+          "scope": "entity.name.tag.tsx",
           "settings": {
-            "fontStyle": "italic",
+            "foreground": "#569CD6"
           }
         },
         {
-          "scope": ["constant.language.null"],
+          "scope": "support.class.component.tsx",
           "settings": {
-            "foreground": "#990000"
+            "foreground": "#4EC9B0"
           }
         },
+        {
+          "scope": "punctuation.definition.tag.begin.tsx",
+          "settings": {
+            "foreground": "#808080"
+          }
+        },
+        {
+          "scope": "punctuation.definition.tag.end.tsx",
+          "settings": {
+            "foreground": "#808080"
+          }
+        }
       ]
-    },
+    }
   },
-  "inline-parameters.enabled": true,
-  "inline-parameters.fontStyle": "normal",
-  "inline-parameters.fontSize": "0.85em",
-  "inline-parameters.margin": "0.15em",
+  "github.copilot.advanced": {},
+  "github.copilot.enable": {
+    "*": true,
+    "markdown": false,
+    "plaintext": false,
+    "scminput": false
+  },
+  "html.autoCreateQuotes": false,
   "inline-parameters.borderRadius": "0.55em",
-  "inline-parameters.padding": "0.15em 0.1em"
+  "inline-parameters.enabled": true,
+  "inline-parameters.fontSize": "0.85em",
+  "inline-parameters.fontStyle": "normal",
+  "inline-parameters.margin": "0.15em",
+  "inline-parameters.padding": "0.15em 0.1em",
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "javascript.preferences.quoteStyle": "double",
+  "search.exclude": {
+    ".firebase": true,
+    ".next": true,
+    "**/*.code-search": true,
+    "**/bower_components": true,
+    "**/metafile.css.json": true,
+    "**/metafile.js.json": true,
+    "**/metafile.server.json": true,
+    "**/node_modules": true,
+    "api/index.js": true,
+    "api/index.js.map": true,
+    "build/": true,
+    "package-lock.json": true
+  },
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "update.mode": "manual",
+  "window.newWindowDimensions": "offset",
+  "window.zoomLevel": -1,
+  "workbench.colorCustomizations": {
+    "gitDecoration.modifiedResourceForeground": "#e2c08d",
+    "gitDecoration.untrackedResourceForeground": "#73c991",
+    "list.warningForeground": "#f6f1a0"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "workbench.tree.enableStickyScroll": false
 }
 
 ```
