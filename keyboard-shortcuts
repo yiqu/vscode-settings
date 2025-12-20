@@ -1,4 +1,3 @@
-
 // Place your key bindings in this file to override the defaultsauto[]
 [
   {
@@ -30,7 +29,9 @@
   {
     "key": "ctrl+shift+s",
     "command": "extension.multiCommand.execute",
-    "args": { "command": "multiCommand.formatPrettierDocumentAndEsLintAutoFixThenSave" }
+    "args": {
+      "command": "multiCommand.formatPrettierDocumentAndEsLintAutoFixThenSave"
+    }
   },
   {
     "key": "ctrl+k s",
@@ -111,5 +112,13 @@
     "key": "alt+left",
     "command": "-workbench.action.quickInputBack",
     "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+shift+-",
+    "command": "editor.cpp.disableenabled"
+  },
+  {
+    "key": "ctrl+shift+=",
+    "command": "editor.action.enableCppGlobally"
   }
 ]
