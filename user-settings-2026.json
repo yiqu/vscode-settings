@@ -1,0 +1,398 @@
+{
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "colorize.languages": [
+    "css",
+    "sass",
+    "scss",
+    "less",
+    "postcss",
+    "sss",
+    "stylus",
+    "xml",
+    "svg",
+    "typescript",
+    "javascript",
+    "javascriptreact",
+    "typescriptreact"
+  ],
+  "cSpell.userWords": [
+    "Addables",
+    "ANALYZEOPEN",
+    "archivo",
+    "ASANA",
+    "Autofix",
+    "billdue",
+    "Boba",
+    "borel",
+    "buggeek",
+    "buildlocal",
+    "calendarv",
+    "calt",
+    "carinsurance",
+    "carsinsurance",
+    "cashmoney",
+    "cata",
+    "categorie",
+    "chakra",
+    "christmaslights",
+    "christmastree",
+    "claymorphism",
+    "clsx",
+    "cmdk",
+    "companyreimbursement",
+    "Consolas",
+    "couldn",
+    "countup",
+    "creditcard",
+    "datasource",
+    "DAZN",
+    "DILIGENTNOTION",
+    "dinos",
+    "dollarsymbol",
+    "drei",
+    "editdelete",
+    "edureimburse",
+    "embla",
+    "emergencycash",
+    "emptybox",
+    "entr",
+    "esbenp",
+    "estgirl",
+    "EVANOS",
+    "execa",
+    "extralight",
+    "falltree",
+    "fastq",
+    "Favorited",
+    "filepond",
+    "financequ",
+    "fira",
+    "firstplace",
+    "Flaticon",
+    "fontsource",
+    "foodsatwork",
+    "forestfire",
+    "gameindices",
+    "githubcopilot",
+    "googlebot",
+    "groundhogday",
+    "gsap",
+    "hgirl",
+    "Histoy",
+    "homegoods",
+    "homeimprove",
+    "homemaintain",
+    "hookform",
+    "hvac",
+    "iconify",
+    "imgsrc",
+    "immer",
+    "incomelayout",
+    "INTELLIGENTNOTION",
+    "isbot",
+    "kanit",
+    "Kodama",
+    "Kqpro",
+    "labelvalue",
+    "lato",
+    "leafnight",
+    "liga",
+    "Lilita",
+    "locationarea",
+    "logologo",
+    "lucide",
+    "luxon",
+    "magglass",
+    "magicui",
+    "maxage",
+    "maxx",
+    "medplus",
+    "melaleuca",
+    "Merriweather",
+    "meshline",
+    "metafile",
+    "Milli",
+    "Millis",
+    "moneybook",
+    "moneylogo",
+    "moveright",
+    "newcar",
+    "newyear",
+    "newyearlights",
+    "nextcanarytest",
+    "nextjs",
+    "nextui",
+    "noresultlogo",
+    "noresultquerylogo",
+    "noselect",
+    "noto",
+    "nprogress",
+    "nums",
+    "nuqs",
+    "outerdiv",
+    "oxanium",
+    "Pacifico",
+    "pangea",
+    "parens",
+    "partialize",
+    "piechart",
+    "piggybank",
+    "pingpong",
+    "pokeball",
+    "Pokedex",
+    "pokedexes",
+    "pokemons",
+    "prefs",
+    "prerender",
+    "presidentsday",
+    "PURP",
+    "reactbits",
+    "reduxjs",
+    "reusify",
+    "rindex",
+    "roboto",
+    "rushstack",
+    "savingsactions",
+    "savingsamount",
+    "savingsdate",
+    "savingssavings",
+    "savingsupdated",
+    "scminput",
+    "secondplace",
+    "Shadcn",
+    "simplebar",
+    "snowtree",
+    "softpop",
+    "sonner",
+    "Spendings",
+    "Staco",
+    "staticity",
+    "Stylesheet",
+    "stylis",
+    "supabase",
+    "svgr",
+    "tailwindcss",
+    "TALENTEDNOTION",
+    "techbudget",
+    "terface",
+    "thirdplace",
+    "toploader",
+    "trafficcam",
+    "treadwell",
+    "turbopack",
+    "twoweeks",
+    "typecheck",
+    "uidotdev",
+    "Uncategorized",
+    "uniqolor",
+    "upsert",
+    "Upsertable",
+    "upserted",
+    "upserting",
+    "urlcat",
+    "usefavicon",
+    "usehooks",
+    "valen",
+    "vaul",
+    "venmo",
+    "winterhat",
+    "xmaslights"
+  ],
+  "cursor.cpp.disabledLanguages": [
+    "markdown",
+    "plaintext",
+    "scminput"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "'MonoLisa 2017 default', JetBrains Mono Light, Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": "'calt', 'liga', 'zero', 'ss01' on, 'ss02' on, 'ss04' on, 'ss06' off, 'ss09', 'ss12', 'ss07', 'ss13', 'ss14' 0, 'ss15' on, 'ss16' on, 'ss17' on, 'ss18' off",
+  "editor.fontSize": 13,
+  "editor.fontWeight": "normal",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+  "editor.inlineSuggest.enabled": true,
+  "editor.inlineSuggest.showToolbar": "always",
+  "editor.letterSpacing": -0.5,
+  "editor.lineHeight": 1.5,
+  "editor.minimap.enabled": false,
+  "editor.stickyScroll.enabled": false,
+  "editor.tabSize": 2,
+  "editor.tokenColorCustomizations": {
+    "[Default Dark Modern]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "storage.modifier",
+            "keyword",
+            "storage.type"
+          ],
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            "constant.language.null",
+            "constant.language.undefined"
+          ],
+          "settings": {
+            "foreground": "#8c8c8c"
+          }
+        }
+      ]
+    },
+    "[Night Owl (No Italics)]": {
+      "textMateRules": [
+        {
+          "scope": "entity.name.tag.tsx",
+          "settings": {
+            "foreground": "#569CD6"
+          }
+        },
+        {
+          "scope": "support.class.component.tsx",
+          "settings": {
+            "foreground": "#4EC9B0"
+          }
+        },
+        {
+          "scope": "punctuation.definition.tag.begin.tsx",
+          "settings": {
+            "foreground": "#808080"
+          }
+        },
+        {
+          "scope": "punctuation.definition.tag.end.tsx",
+          "settings": {
+            "foreground": "#808080"
+          }
+        }
+      ]
+    },
+    "[Night Owl]": {
+      "textMateRules": [
+        {
+          "scope": "entity.name.tag.tsx",
+          "settings": {
+            "foreground": "#569CD6"
+          }
+        },
+        {
+          "scope": "support.class.component.tsx",
+          "settings": {
+            "foreground": "#4EC9B0"
+          }
+        },
+        {
+          "scope": "punctuation.definition.tag.begin.tsx",
+          "settings": {
+            "foreground": "#808080"
+          }
+        },
+        {
+          "scope": "punctuation.definition.tag.end.tsx",
+          "settings": {
+            "foreground": "#808080"
+          }
+        }
+      ]
+    }
+  },
+  "explorer.compactFolders": false,
+  "github.copilot.advanced": {},
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.enable": {
+    "*": true,
+    "markdown": false,
+    "plaintext": false,
+    "scminput": false
+  },
+  "html.autoCreateQuotes": false,
+  "importCost.fontStyle": "oblique",
+  "importCost.largePackageDarkColor": "#992600",
+  "importCost.mediumPackageDarkColor": "#006622",
+  "importCost.smallPackageDarkColor": "#888",
+  "inline-parameters.borderRadius": "0.55em",
+  "inline-parameters.enabled": true,
+  "inline-parameters.fontSize": "0.85em",
+  "inline-parameters.fontStyle": "normal",
+  "inline-parameters.margin": "0.15em",
+  "inline-parameters.padding": "0.15em 0.1em",
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
+  "javascript.preferences.quoteStyle": "single",
+  "material-icon-theme.activeIconPack": "react",
+  "multiCommand.commands": [
+    {
+      "command": "multiCommand.formatPrettierDocumentAndEsLintAutoFix",
+      "sequence": [
+        "editor.action.formatDocument",
+        "eslint.executeAutofix"
+      ]
+    },
+    {
+      "command": "multiCommand.formatPrettierDocumentAndEsLintAutoFixThenSave",
+      "sequence": [
+        "editor.action.formatDocument",
+        "eslint.executeAutofix",
+        "workbench.action.files.saveAll"
+      ]
+    }
+  ],
+  "prettier.jsxSingleQuote": true,
+  "prisma.showPrismaDataPlatformNotification": false,
+  "search.exclude": {
+    ".firebase": true,
+    ".next": true,
+    "**/*.code-search": true,
+    "**/bower_components": true,
+    "**/build/": true,
+    "**/metafile.css.json": true,
+    "**/metafile.js.json": true,
+    "**/metafile.server.json": true,
+    "**/node_modules": true,
+    "api/index.js": true,
+    "api/index.js.map": true,
+    "package-lock.json": true
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "update.mode": "manual",
+  "window.newWindowDimensions": "offset",
+  "window.zoomLevel": -1,
+  "workbench.activityBar.orientation": "vertical",
+  "workbench.colorCustomizations": {
+    "gitDecoration.modifiedResourceForeground": "#e2c08d",
+    "gitDecoration.untrackedResourceForeground": "#73c991",
+    "list.warningForeground": "#f6f1a0"
+  },
+  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.preferredDarkColorTheme": "Default Dark Modern",
+  "workbench.preferredLightColorTheme": "Default Light Modern",
+  "workbench.startupEditor": "none",
+  "workbench.tree.enableStickyScroll": false,
+  "cursor.cmdk.useThemedDiffBackground": true,
+  "extensions.ignoreRecommendations": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.mouseWheelScrollSensitivity": 3,
+  "workbench.list.mouseWheelScrollSensitivity": 3,
+}
