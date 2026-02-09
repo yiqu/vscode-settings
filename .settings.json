@@ -11,7 +11,7 @@
     "commandCenter.border": "#15202b99",
     "sash.hoverBorder": "#ba9578",
     "statusBar.background": "#a97a56",
-    "statusBar.foreground": "#eee",
+    "statusBar.foreground": "#000000",
     "statusBarItem.hoverBackground": "#876245",
     "statusBarItem.remoteBackground": "#a97a56",
     "statusBarItem.remoteForeground": "#15202b",
@@ -21,5 +21,5 @@
     "titleBar.inactiveForeground": "#ffffff99",
     "activityBar.activeBorder": "#d5e9de"
   },
-  "peacock.color": "#6376b8"
+  "prisma.pinToPrisma6": true
 }
