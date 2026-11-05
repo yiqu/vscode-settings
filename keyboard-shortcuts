@@ -120,5 +120,25 @@
   {
     "key": "ctrl+shift+=",
     "command": "editor.action.enableCppGlobally"
+  },
+  {
+    "key": "ctrl+q",
+    "command": "workbench.action.pinEditor",
+    "when": "!activeEditorIsPinned"
+  },
+  {
+    "key": "ctrl+m shift+enter",
+    "command": "-workbench.action.pinEditor",
+    "when": "!activeEditorIsPinned"
+  },
+  {
+    "key": "ctrl+q",
+    "command": "workbench.action.unpinEditor",
+    "when": "activeEditorIsPinned"
+  },
+  {
+    "key": "ctrl+m shift+enter",
+    "command": "-workbench.action.unpinEditor",
+    "when": "activeEditorIsPinned"
   }
 ]
