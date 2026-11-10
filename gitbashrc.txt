@@ -1,0 +1,67 @@
+# ───────── Git-aware prompt ─────────
+# Line 1: [time] full/path  repo ⎇ branch  status
+# Line 2: $   (red if the last command failed)
+#
+# Status legend:
+#   ✔ clean          ●N staged        ✚N modified      ?N untracked
+#   ✖N conflicts     ⚑N stashed       ↑N ahead         ↓N behind
+#   ○ local (no upstream branch)      ∅ empty (no commits yet)
+
+__git_prompt() {
+  local top status line xy a b
+  top=$(git rev-parse --show-toplevel 2>/dev/null) || return
+  status=$(git status --porcelain=v2 --branch --show-stash 2>/dev/null) || return
+
+  local branch="" oid="" upstream=0 ahead=0 behind=0 stash=0
+  local staged=0 modified=0 untracked=0 conflicts=0
+
+  while IFS= read -r line; do
+    case "$line" in
+      "# branch.oid "*)      oid=${line#\# branch.oid } ;;
+      "# branch.head "*)     branch=${line#\# branch.head } ;;
+      "# branch.upstream "*) upstream=1 ;;
+      "# branch.ab "*)       read -r _ _ a b <<< "$line"; ahead=${a#+}; behind=${b#-} ;;
+      "# stash "*)           stash=${line#\# stash } ;;
+      "1 "*|"2 "*)           xy=${line:2:2}
+                             [[ ${xy:0:1} != . ]] && staged=$((staged+1))
+                             [[ ${xy:1:1} != . ]] && modified=$((modified+1)) ;;
+      "u "*)                 conflicts=$((conflicts+1)) ;;
+      "? "*)                 untracked=$((untracked+1)) ;;
+    esac
+  done <<< "$status"
+
+  [[ $branch == "(detached)" ]] && branch="detached@${oid:0:7}"
+
+  local R='\[\e[0m\]' RED='\[\e[31m\]' GRN='\[\e[32m\]' YEL='\[\e[33m\]' \
+        BLU='\[\e[34m\]' MAG='\[\e[35m\]' CYN='\[\e[36m\]' DIM='\[\e[90m\]'
+
+  local s=""
+  if [[ $oid == "(initial)" ]]; then
+    s+=" ${DIM}∅ empty${R}"
+  fi
+  ((conflicts)) && s+=" ${RED}✖${conflicts} conflicts${R}"
+  ((staged))    && s+=" ${GRN}●${staged} staged${R}"
+  ((modified))  && s+=" ${YEL}✚${modified} modified${R}"
+  ((untracked)) && s+=" ${DIM}?${untracked} untracked${R}"
+  ((stash))     && s+=" ${MAG}⚑${stash} stashed${R}"
+  if ((upstream)); then
+    ((ahead))  && s+=" ${CYN}↑${ahead} ahead${R}"
+    ((behind)) && s+=" ${CYN}↓${behind} behind${R}"
+  elif [[ $oid != "(initial)" ]]; then
+    s+=" ${DIM}○ local${R}"
+  fi
+  ((conflicts + staged + modified + untracked == 0)) && [[ $oid != "(initial)" ]] \
+    && s+=" ${GRN}✔ clean${R}"
+
+  local BBLU='\[\e[1;34m\]' BMAG='\[\e[1;35m\]'
+  printf '  %s%s%s %s⎇ %s%s%s' "$BBLU" "${top##*/}" "$R" "$DIM" "$BMAG" "$branch" "$R$s"
+}
+
+__build_prompt() {
+  local exit=$?
+  local R='\[\e[0m\]' DIM='\[\e[90m\]' YEL='\[\e[33m\]' GRN='\[\e[32m\]' RED='\[\e[31m\]'
+  local sym="${GRN}\$${R}"
+  ((exit)) && sym="${RED}\$${R}"
+  PS1="\n${DIM}[\t]${R} ${YEL}${PWD}${R}$(__git_prompt)\n${sym} "
+}
+PROMPT_COMMAND=__build_prompt
